@@ -5,19 +5,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="./images/Ahmed.jpg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-		/>
-
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+	
 		<link rel="stylesheet" href="./css/font-awesome.min.css" />
 		<link rel="stylesheet" href="./css/normalize.css" />
 		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Oswald:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-			rel="stylesheet"
-		/>
+			rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 		<title>Ahmed Ali CV</title>
 	</head>
 	<body>
@@ -179,7 +176,7 @@
 
 					<div class="contacts flex-center">
 						<div class="direct linkedin">
-							<a href="www.linkedin.com/in/ahmed-ali-b64a32206"
+							<a href="https://www.linkedin.com/in/ahmed-ali-b64a32206"
 								><img loading="lazy" src="images/linkedin.png" alt=""
 							/></a>
 						</div>
@@ -190,7 +187,7 @@
 						</div>
 						<div class="direct github">
 							<a href="https://github.com/AhmedAliAhmed557"
-								><i class="fa fa-github" aria-hidden="true"></i
+								><i class="fab fa-github" aria-hidden="true"></i
 							></a>
 						</div>
 						<div class="direct meta">
@@ -218,217 +215,342 @@
 				</div>
 
 				<div class="img-box">
-					<img loading="lazy" src="images/Ahmed.jpg" alt="" />
+					<img loading="lazy" src="images/Ahmed 2.jpg" alt="" style="max-height: 600px;" />
 				</div>
 			</div>
 		</div>
 		<div class="gallary" id="gallary">
 			<div class="container">
 				<h2 class="main-heading">My Gallary</h2>
+				<div class="buttons-filter">
+					<button class="btn all" onclick="filterProjects('all')">
+						<i class="fas fa-border-all"></i> All
+					</button>
+					<button class="btn nextjs" onclick="filterProjects('nextjs')">
+						<i class="fab fa-node-js"></i> Next.js
+					</button>
+					<button class="btn react" onclick="filterProjects('react')">
+						<i class="fab fa-react"></i> React
+					</button>
+					<button class="btn native-js" onclick="filterProjects('native-js')">
+						<i class="fab fa-js-square"></i> JavaScript
+					</button>
+					<button class="btn wordpress" onclick="filterProjects('wordpress')">
+						<i class="fab fa-wordpress"></i> WordPress
+					</button>
+					<button class="btn worked-on" onclick="filterProjects('worked-on')">
+						<i class="fas fa-briefcase"></i> Worked On
+					</button>
+				</div>
+				
+				
 				<div class="images-box">
 					<img
 						class="my-img"
 						src="images/e-commece-phone-store.jpg"
 						alt="E-Commece Phone Store"
 						data-link="https://e-commece-phone-store.onrender.com/"
+						data-category="react"
 					/>
 					<img
 						class="my-img"
 						src="images/portfolio-netify.jpg"
 						alt="Responive Portfolio-React with SCSS"
 						data-link="https://ahmedali-portfoilo.netlify.app"
+						data-category="react"
+					/>
+					<img
+						class="my-img"
+						src="images/Ibdaa.png"
+						alt="Ibdaa Educational Programming System"
+						data-link="https://ibdaa-ed.com/ar"
+						data-category="worked-on"
+					/>
+					<img
+						class="my-img"
+						src="images/lobby-lane.png"
+						alt="Lobby Lane Company"
+						data-link="https://new-lobby-lane.vercel.app/"
 					/>
 					<img
 						class="my-img"
 						src="images/Aghsan Al Thuraya Advertising Office.png"
 						alt="Aghsan Al Thuraya Advertising Office"
-						data-link="https://althuraya.com.co"
+						data-link="https://aghsan-al-thuraya-company.vercel.app/en"
+						data-category="nextjs"
 					/>
 					<img
 						class="my-img"
 						src="images/titra.png"
 						alt="Titra Company"
 						data-link="https://titracompany.vercel.app/"
+						data-category="nextjs"
+					/>
+					<img
+						class="my-img"
+						src="images/vetlap.png"
+						alt="Vetlap Clinic"
+						data-link="https://www.vetlabclinic.com/"
+						data-category="react"
 					/>
 					<img
 						class="my-img"
 						src="images/alfaalfa.png"
 						alt="Alfaalfa Company"
 						data-link="https://alfaalfa-company.vercel.app/"
+						data-category="nextjs"
+					/>
+					<img
+						class="my-img"
+						src="images/Aleefie.png"
+						alt="Aleefie"
+						data-link="https://aleefie.com/ar"
+						data-category="worked-on"
 					/>
 					<img
 						class="my-img"
 						src="images/education-academy.png"
 						alt="Education Academy Portfolio"
 						data-link="https://educational-portfolio.vercel.app/"
+						data-category="native-js"
+					/>
+					<img
+						class="my-img"
+						src="images/Doctor.png"
+						alt="Doctor Portfolio"
+						data-link="https://doctor-portfolio-two.vercel.app/"
+						data-category="native-js"
+					/>
+					<img
+						class="my-img"
+						src="images/Governance.png"
+						alt="Governance Website"
+						data-link="https://corgov.com/"
+						data-category="wordpress"
+					/>
+					<img
+						class="my-img"
+						src="images/Almunjiz.png"
+						alt="Almunjiz"
+						data-link="https://almunjiz-sa.com/"
+						data-category="wordpress"
 					/>
 					<img
 						class="my-img"
 						src="images/gabriel-academy.png"
 						alt="Gabriel Academy for Quraan"
 						data-link="https://gabriel-academy.com/"
+						data-category="wordpress"
 					/>
 					<img
 						class="my-img"
 						src="images/Modern Website.jpg"
 						alt="Modern Website with Next JS"
 						data-link="https://modern-website-one.vercel.app/"
+						data-category="nextjs"
 					/>
 					<img
 						class="my-img"
 						src="images/Shopping Cart.jpg"
 						alt="Shopping Cart with React JS"
 						data-link="https://shopping-cart-2nx8.vercel.app/"
+						data-category="react"
 					/>
 					<img
 						class="my-img"
 						src="images/Yeshtery E-Commerce.png"
 						alt="Yeshtery E-Commerce"
 						data-link="https://yeshtery-e-commerce.vercel.app/"
+						data-category="react"
+					/>
+					<img
+						class="my-img"
+						src="images/Speed Printer Portfolio .png"
+						alt="Speed Printer Portfolio"
+						data-link="https://fast-printer.online/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/Dynamic Product Filtering.png"
 						alt="Dynamic Product Filtering for E-Commece"
 						data-link="https://dynamic-product-filtering.vercel.app/"
+						data-category="react"
 					/>
 					<img
 						class="my-img"
 						src="images/alnour.jpg"
 						alt="Alnour Company"
 						data-link="https://ahmedaliahmed557.github.io/Al-Nour-Web-Site/index.html"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/PRODUCT MANAGEMENT SYSTEM.jpg"
 						alt="Product Management System"
 						data-link="https://ahmedaliahmed557.github.io/Product-Management-System"
+						data-category="native-js"
+					/>
+					<img
+						class="my-img"
+						src="images/to-do-app.png"
+						alt="To-Do-Task App Next-JS & Typescript"
+						data-link="https://to-do-tasks-gules.vercel.app/"
+						data-category="nextjs"
+					/>
+					<img
+						class="my-img"
+						src="images/menu.png"
+						alt="Menu Restaurant"
+						data-link="https://menu-demo.technolanes.com/"
+						data-category="worked-on"
 					/>
 					<img
 						class="my-img"
 						src="images/Color-Game.jpg"
 						alt="Color Game"
 						data-link="https://ahmedaliahmed557.github.io/Color-Game/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/Baladi Express Restaurant.jpg"
 						alt="Baladi Express Restaurant"
 						data-link="https://baladi-express-restaurant.onrender.com/"
+						data-category="react"
 					/>
 					<img
 						class="my-img"
 						src="images/jado-website.png"
 						alt="Jadoo Website"
 						data-link="https://jadoo-website.vercel.app/"
+						data-category="nextjs"
 					/>
 					<img
 						class="my-img"
 						src="images/shop-management.png"
 						alt="Shops Management System"
 						data-link="https://react-firebase-mui-shops.vercel.app/"
+						data-category="react"
 					/>
 					<img
 						class="my-img"
 						src="images/Github Repos.jpg"
 						alt="Github Repos"
 						data-link="https://ahmedaliahmed557.github.io/Github-Repos/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/Creative-Landing-page.jpg"
 						alt="Creative Landing Page"
 						data-link="https://ahmedaliahmed557.github.io/Creative-Landing-page/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/Image-Editor.jpg"
 						alt="Image Editor"
 						data-link="https://ahmedaliahmed557.github.io/Image-Editor/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/Third-Templete.jpg"
 						alt="Company Website"
 						data-link="https://ahmedaliahmed557.github.io/Third-Templete/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/SASS-Templet.jpg"
 						alt="SASS Templet"
 						data-link="https://ahmedaliahmed557.github.io/SASS-Templet/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/IVERY Company.jpg"
 						alt="IVERY Company"
 						data-link="https://ahmedaliahmed557.github.io/IVERY-Company/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/Typing-_Speed_Test_Game.jpg"
 						alt="Typing Speed Test Game"
 						data-link="https://ahmedaliahmed557.github.io/Typing-_Speed_Test_Game/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/acme-system.png"
 						alt="Acme System"
 						data-link="https://acme-system-cool-code.vercel.app/"
+						data-category="react"
 					/>
 					<img
 						class="my-img"
 						src="images/Bondi-Design.jpg"
 						alt="Bondi Design"
 						data-link="https://ahmedaliahmed557.github.io/Bondi-Design/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/Country Guide.jpg"
 						alt="Country Guide"
 						data-link="https://ahmedaliahmed557.github.io/Country-Guide/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/Creative-Hover-menu-effect-cool.jpg"
 						alt="Creative Hover Menu Effect"
 						data-link="https://ahmedaliahmed557.github.io/Creative-Hover-menu-effect-cool/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/A-Scrolling-Website.jpg"
 						alt="A Scrolling Website"
 						data-link="https://ahmedaliahmed557.github.io/A-Scrolling-Website/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/Tic-Tac-Toe-Game.jpg"
 						alt="Tic Tac Toe Game"
 						data-link="https://ahmedaliahmed557.github.io/Tic-Tac-Toe-Game/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/Drag-Drop.jpg"
 						alt="Image Ten"
 						data-link="https://ahmedaliahmed557.github.io/Drag-Drop/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/To-Do_List_jQuary.jpg"
 						alt="Image To Do List-jQuary"
 						data-link="https://ahmedaliahmed557.github.io/To-Do_List_jQuary/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/RGB-Background-color.jpg"
 						alt="RGB-Background-Color"
 						data-link="https://ahmedaliahmed557.github.io/RGB-Background-color/"
+						data-category="native-js"
 					/>
 					<img
 						class="my-img"
 						src="images/calculator.jpg"
 						alt="Calculator"
 						data-link="https://ahmedaliahmed557.github.io/Calculator/"
+						data-category="native-js"
 					/>
 				</div>
 			</div>
@@ -973,7 +1095,22 @@
 		</div>
 		<div class="footer">Created By Me Ahmed Ali</div>
 		<span class="up">Up</span>
+		<script>
+			function filterProjects(category) {
+				const images = document.querySelectorAll('.my-img');
+				 document.querySelectorAll(".btn").forEach((btn) => btn.classList.remove("active"));
 
+    // Add active class to the clicked button
+    document.querySelector(`.btn.${category}`).classList.add("active");
+				images.forEach(img => {
+					if (category === 'all' || img.dataset.category === category) {
+						img.style.display = 'block';
+					} else {
+						img.style.display = 'none';
+					}
+				});
+			}
+		</script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

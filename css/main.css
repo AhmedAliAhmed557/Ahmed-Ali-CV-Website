@@ -660,8 +660,70 @@ a {
 .gallary h2 {
 	margin-bottom: 50px;
 }
+.buttons-filter {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.buttons-filter .btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons-filter .btn i {
+    font-size: 18px;
+}
+
+.buttons-filter .all {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+}
+
+.buttons-filter .nextjs {
+    background: linear-gradient(45deg, #000000, #434343);
+}
+
+.buttons-filter .react {
+    background: linear-gradient(45deg, #00d4ff, #090979);
+}
+
+.buttons-filter .native-js {
+    background: linear-gradient(45deg, #f7df1e, #ff9800);
+}
+
+.buttons-filter .wordpress {
+    background: linear-gradient(45deg, #21759b, #464646);
+}
+
+.buttons-filter .worked-on {
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Deep Purple to Vibrant Blue */
+}
+
+.buttons-filter .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.buttons-filter .btn.active {
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.6);
+	border: 3px solid;
+	border-color: var(--main-color);
+}
 .gallary .images-box {
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 .gallary .images-box .my-img {
 	box-shadow: 0 0 0 0.3px;
