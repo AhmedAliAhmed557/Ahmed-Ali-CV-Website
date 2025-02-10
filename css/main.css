@@ -665,6 +665,7 @@ a {
     gap: 10px;
     justify-content: center;
     margin-bottom: 20px;
+	flex-wrap: wrap;
 }
 
 .buttons-filter .btn {
