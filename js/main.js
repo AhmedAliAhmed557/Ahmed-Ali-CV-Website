@@ -404,9 +404,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
 	let textElement = document.querySelector(".introduction-text p");
-	let textToType = `I can be responsible for leading the development and implementation of
-          complex web, also I can build reusable code and libraries for future
-          use .`;
+	let textToType = `As a Full Stack Software Developer, I specialize in developing scalable, efficient, and user-friendly applications. With expertise in the MERN stack and a strong focus on both front-end and back-end technologies, I am committed to delivering high-quality, end-to-end solutions.`;
 	let speed = 50;
 	let loopDelay = 1000;
 
@@ -514,3 +512,13 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 });
+
+// WhatsApp Button
+function openWhatsApp() {
+	const phoneNumber = "201111687950"; // Corrected phone number with country code
+	const message = "Hello, I would like to inquire about something."; // Customize the message as needed
+	const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+		message
+	)}`;
+	window.open(url, "_blank");
+}
