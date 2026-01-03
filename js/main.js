@@ -522,3 +522,56 @@ function openWhatsApp() {
 	)}`;
 	window.open(url, "_blank");
 }
+
+// Open WhatsApp from popup
+function openWhatsAppFromPopup() {
+	openWhatsApp();
+	closeCallPopup();
+}
+
+// Close call popup
+function closeCallPopup() {
+	const popup = document.getElementById("call-popup-overlay");
+	if (popup) {
+		popup.classList.remove("show");
+		setTimeout(() => {
+			popup.style.display = "none";
+		}, 400);
+	}
+}
+
+// Show centered call popup after 5 seconds
+setTimeout(() => {
+	const callPopup = document.getElementById("call-popup-overlay");
+	if (callPopup) {
+		callPopup.style.display = "flex";
+		setTimeout(() => {
+			callPopup.classList.add("show");
+		}, 50);
+	}
+
+	// Auto-hide popup after 10 seconds
+	setTimeout(() => {
+		closeCallPopup();
+	}, 10000);
+}, 5000);
+
+// Show WhatsApp button after 5 seconds
+setTimeout(() => {
+	const whatsappPopup = document.getElementById("whatsapp-popup");
+	if (whatsappPopup) {
+		whatsappPopup.style.display = "flex";
+		setTimeout(() => {
+			whatsappPopup.classList.add("show");
+		}, 50);
+	}
+}, 5000);
+
+// Close popup when clicking outside
+document.addEventListener("click", function (event) {
+	const callPopup = document.getElementById("call-popup-overlay");
+	const popupContent = document.querySelector(".call-popup-content");
+	if (callPopup && event.target === callPopup) {
+		closeCallPopup();
+	}
+});
